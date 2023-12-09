@@ -74,16 +74,9 @@ export default {
 <style scoped lang="scss">
 @use '../style/partials' as *;
 .container {
-  padding-top: 1.875rem;
   img {
     width: 70px;
   }
-
-  a {
-    all: unset;
-    cursor: pointer;
-  }
-
   ul {
     list-style: none;
     display: flex;

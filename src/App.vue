@@ -1,6 +1,7 @@
 <script>
 import Header from './components/Header.vue';
 import Jumbo from './components/Jumbo.vue';
+import FooterApp from './components/FooterApp.vue';
 export default {
   data() {
     return {};
@@ -8,13 +9,15 @@ export default {
   components: {
     Header,
     Jumbo,
+    FooterApp,
   },
 };
 </script>
 
 <template>
   <Header></Header>
-  <Jumbo><div class="bg"></div></Jumbo>
+  <Jumbo></Jumbo>
+  <FooterApp></FooterApp>
 </template>
 
 <style scoped lang="scss">
