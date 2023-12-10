@@ -70,7 +70,7 @@ export default {
 </template>
 <style scoped lang="scss">
 @use '../style/partials' as *;
-@use '../style/variables' as *;
+
 section {
   background-color: #303030;
   padding: 30px 0;

@@ -15,7 +15,7 @@ export default {
 </template>
 <style scoped lang="scss">
 @use '../style/partials' as *;
-@use '../style/variables' as *;
+
 section {
   background-color: #1c1c1c;
   .container {

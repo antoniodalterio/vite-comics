@@ -79,7 +79,7 @@ export default {
 
 <style scoped lang="scss">
 @use '../style/partials' as *;
-@use '../style/variables' as *;
+
 .container {
   img {
     width: 70px;

@@ -241,13 +241,12 @@ export default {
 </template>
 <style scoped lang="scss">
 @use '../style/partials' as *;
-@use '../style/variables' as *;
 
 .bg-image {
   background-image: url(../../public/img/footer-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top, right;
+  background-position: top;
   overflow: hidden;
 
   .container {
