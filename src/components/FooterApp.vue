@@ -167,50 +167,81 @@ export default {
 };
 </script>
 <template>
+  <!-- sezione FooterTop -->
   <section class="bg-image">
+    <!-- container  col -->
     <div class="container">
+      <!-- colonna 1 -->
       <div class="col-1">
+        <!-- lista ul link 1 -->
         <ul>
           <li>
             <h3>{{ linkFooter1[0].title }}</h3>
           </li>
+
+          <!-- ciclo di li  -->
           <li v-for="li in linkFooter1">
             <a href="{{ li.link }}">{{ li.name }}</a>
           </li>
         </ul>
+        <!-- lista ul link 1 -->
 
+        <!-- lista ul link 2 -->
         <ul>
           <li>
             <h3>{{ linkFooter2[0].title }}</h3>
           </li>
+
+          <!-- ciclo di li  -->
           <li v-for="li in linkFooter2">
             <a href="{{ li.link }}">{{ li.name }}</a>
           </li>
         </ul>
+        <!-- lista ul link 2 -->
+
+        <!-- lista ul link 3 -->
         <ul>
           <li>
             <h3>{{ linkFooter3[0].title }}</h3>
           </li>
+
+          <!-- ciclo di li  -->
           <li v-for="li in linkFooter3">
             <a href="{{ li.link }}">{{ li.name }}</a>
           </li>
         </ul>
+        <!-- lista ul link 3 -->
+
+        <!-- lista ul link 4 -->
         <ul>
           <li>
             <h3>{{ linkFooter4[0].title }}</h3>
           </li>
+
+          <!-- ciclo di li  -->
           <li v-for="li in linkFooter4">
             <a href="{{ li.link }}">{{ li.name }}</a>
           </li>
         </ul>
+        <!-- lista ul link 4 -->
       </div>
+      <!-- colonna 1 -->
+
+      <!-- colonna img 2 -->
       <img src="../../public/img/dc-logo-bg.png" alt="" />
+      <!-- colonna img 2 -->
     </div>
+    <!-- container  -->
   </section>
+  <!-- sezione Footer -->
+
+  <!-- Sezione FooterBOT -->
   <FooterBot></FooterBot>
+  <!-- Sezione FooterBOT -->
 </template>
 <style scoped lang="scss">
 @use '../style/partials' as *;
+@use '../style/variables' as *;
 
 .bg-image {
   background-image: url(../../public/img/footer-bg.jpg);
@@ -234,7 +265,6 @@ export default {
 
         li {
           color: #959595;
-          line-height: 1.6;
 
           &:hover {
             color: white;
@@ -242,8 +272,12 @@ export default {
 
           h3 {
             color: white;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-transform: uppercase;
+          }
+
+          a {
+            line-height: 1.6;
           }
         }
       }

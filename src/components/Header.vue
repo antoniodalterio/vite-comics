@@ -61,18 +61,25 @@ export default {
 </script>
 
 <template>
+  <!-- container Header -->
   <div class="container">
     <img src="../../public/img/dc-logo.png" alt="" />
+
+    <!-- lista link -->
     <ul>
+      <!-- li ciclato -->
       <li v-for="li in links">
         <a href="#">{{ li.name }}</a>
       </li>
     </ul>
+    <!-- lista link -->
   </div>
+  <!-- container Header -->
 </template>
 
 <style scoped lang="scss">
 @use '../style/partials' as *;
+@use '../style/variables' as *;
 .container {
   img {
     width: 70px;

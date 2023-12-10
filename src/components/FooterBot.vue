@@ -40,24 +40,37 @@ export default {
 };
 </script>
 <template>
+  <!-- sezione FooterBOt -->
   <section>
+    <!-- container FooterBot di col-1 & col-2 -->
     <div class="container">
+      <!-- col-1 -->
       <div class="col-1">
         <button><a href="">Sing-up Now!</a></button>
       </div>
+      <!-- col-1 -->
+
+      <!-- col-2 -->
       <div class="col-2">
         <h3>Follow us</h3>
+        <!-- lista link -->
         <ul>
+          <!-- li con ciclato -->
           <li v-for="li in socials">
             <img :src="li.img" alt="" />
           </li>
         </ul>
+        <!-- lista link -->
       </div>
+      <!-- col-2 -->
     </div>
+    <!-- container FooterBot -->
   </section>
+  <!-- sezione FooterBOt -->
 </template>
 <style scoped lang="scss">
 @use '../style/partials' as *;
+@use '../style/variables' as *;
 section {
   background-color: #303030;
   padding: 30px 0;
