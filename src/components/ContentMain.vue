@@ -1,7 +1,6 @@
 <script>
 import Comics from './Comics.vue';
 export default {
-  name: '',
   components: {
     Comics,
   },
@@ -100,6 +99,7 @@ export default {
   <section>
     <!-- container jumbo -->
     <div class="container">
+      <div class="badge">Current Series</div>
       <div class="comics">
         <Comics
           v-for="comic in comics"
@@ -121,6 +121,19 @@ section {
   .container {
     padding: 50px 0;
     justify-content: start;
+    position: relative;
+
+    .badge {
+      padding: 10px 20px;
+      background-color: #0282f9;
+      color: white;
+      position: absolute;
+      left: 0;
+      top: -20px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.658);
+    }
 
     .comics {
       display: flex;

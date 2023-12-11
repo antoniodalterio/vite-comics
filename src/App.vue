@@ -1,5 +1,6 @@
 <script>
 import Header from './components/Header.vue';
+import Jumbo from './components/Jumbo.vue';
 import ContentMain from './components/ContentMain.vue';
 import NavBar from './components/NavBar.vue';
 import FooterApp from './components/FooterApp.vue';
@@ -10,6 +11,7 @@ export default {
   },
   components: {
     Header,
+    Jumbo,
     ContentMain,
     NavBar,
     FooterApp,
@@ -19,6 +21,7 @@ export default {
 
 <template>
   <Header></Header>
+  <Jumbo></Jumbo>
   <ContentMain></ContentMain>
   <NavBar></NavBar>
   <FooterApp></FooterApp>

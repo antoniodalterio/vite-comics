@@ -22,12 +22,11 @@ export default {
 
   .img-container {
     width: 100%;
-    height: 200px;
-    overflow: hidden;
 
     img {
       width: 100%;
       display: block;
+      height: 200px;
     }
   }
 
